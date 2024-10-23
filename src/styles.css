@@ -1,0 +1,81 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+/* @external-resource primeicons/primeicons.css */
+
+:root {
+  --primary-color: #2477BF;
+  --primary-light: #5FAAD9;
+  --secondary-color: #82C0D9;
+  --tertiary-color: #A3D3D9;
+  --background-color: #F2F2F2;
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--background-color);
+}
+
+.p-card {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,0.12);
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+/* PrimeNG Component Overrides */
+.p-button.p-button-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.p-button.p-button-primary:hover {
+  background: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.p-inputtext:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+  background: var(--primary-color);
+}
+
+.p-menubar {
+  border-radius: 0;
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+}
